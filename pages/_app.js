@@ -1,7 +1,7 @@
 import NextApp from 'next/app'
-import { Fragment } from 'react'
 import { ApolloProvider } from '@apollo/react-hooks'
 import withApollo from '../lib/withApollo'
+import AppLayout from '../layouts/AppLayout'
 
 class App extends NextApp {
   static async getInitialProps({ Component, ctx }) {
@@ -17,12 +17,11 @@ class App extends NextApp {
 
   render() {
     const { Component, pageProps, apolloClient } = this.props
-    const Layout = Component.Layout || Fragment
     return (
       <ApolloProvider client={apolloClient}>
-        <Layout>
+        <AppLayout>
           <Component { ...pageProps } />
-        </Layout>
+        </AppLayout>
       </ApolloProvider>
     )
   }
