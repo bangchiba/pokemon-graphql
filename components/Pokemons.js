@@ -1,5 +1,5 @@
 import { useQuery } from '@apollo/react-hooks'
-import { POKEMONS } from '../graphql/pokemon'
+import { POKEMONS } from '../graphql/Pokemon'
 
 const Pokemons = () => {
   const { loading, data } = useQuery(POKEMONS, {

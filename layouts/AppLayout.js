@@ -25,7 +25,7 @@ const AppLayout = ({ children }) => {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="/">
               <img src="/img/logo.png" alt="logo" />
               Pokemon
             </a>

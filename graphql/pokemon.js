@@ -11,3 +11,20 @@ export const POKEMONS = gql`
     }
   }
 `
+
+export const POKEMON = gql`
+  query($id: String) {
+    val: pokemon(id: $id) {
+      id
+      number
+      name
+      image
+      types
+      evolutions {
+        id
+        name
+        image
+      }
+    }
+  }
+`
