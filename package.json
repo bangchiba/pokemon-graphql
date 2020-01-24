@@ -15,7 +15,8 @@
     "next": "^9.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "prettier": "^1.18.2"
   },
   "scripts": {
     "dev": "next",
@@ -24,19 +25,19 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
-    "babel-eslint": "^10.0.3",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.18.0",
-    "prettier": "^1.19.1"
+    "eslint": "^5.16.0",
+    "babel-eslint": "^10.0.2",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "prettier": "^1.18.2"
   },
   "lint-staged": {
     "**/*.{js,json}": [
-      "prettier --single-quote --no-semi --trailing-comma es5 --write",
-      "git add"
+      "prettier --single-quote --no-semi --trailing-comma es5 --write"
     ]
   }
 }

@@ -14,21 +14,26 @@ const AppLayout = ({ children }) => {
       <div className="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div className="container-fluid">
           <div className="navbar-header">
-            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <button
+              type="button"
+              className="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
               <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+              <span className="icon-bar" />
             </button>
             <a className="navbar-brand" href="#">
-              <img src="/img/logo.png" />
-              Pokédex
+              <img src="/img/logo.png" alt="logo" />
+              Pokemon
             </a>
           </div>
+        </div>
       </div>
-    </div>
-    <div className="container-fluid">{children}</div>
-    </> 
+      <div className="container-fluid">{children}</div>
+    </>
   )
 }
 
