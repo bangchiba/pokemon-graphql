@@ -5,6 +5,9 @@ export const POKEMONS = gql`
     val : pokemons(first: $first) {
         id
         name
+        image
+        types
+        classification
     }
   }
 `
