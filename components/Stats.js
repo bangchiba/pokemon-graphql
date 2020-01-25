@@ -8,6 +8,14 @@ const Stats = ({ data }) => {
           <strong>HP</strong>
           <span className="badge">{data.maxHP}</span>
         </li>
+        <li className="list-group-item">
+          <strong>CP</strong>
+          <span className="badge">{data.maxCP}</span>
+        </li>
+        <li className="list-group-item">
+          <strong>Flee Rate</strong>
+          <span className="badge">{data.fleeRate}</span>
+        </li>
       </ul>
     </div>
   )

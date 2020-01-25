@@ -3,7 +3,7 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 
 const Tabs = ({ items, children }) => {
-  const [index, setIndex] = useState(1)
+  const [index, setIndex] = useState(0)
   return (
     <>
       <ul className="nav nav-tabs nav-justified">

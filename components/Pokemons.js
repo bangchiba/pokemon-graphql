@@ -48,15 +48,14 @@ const Pokemons = () => {
                 </div>
                 <div className="panel-footer">
                   <div className="text-center">
-                    {val.types.map((v, k) => {
+                    {val.types.map((v, i) => {
                       return (
-                        <a href={`/${v}`} key={k}>
-                          <span
-                            className={`label type type-${v.toLowerCase()}`}
-                          >
-                            {v}
-                          </span>
-                        </a>
+                        <span
+                          key={i}
+                          className={`label type type-${v.toLowerCase()}`}
+                        >
+                          {v}
+                        </span>
                       )
                     })}
                   </div>

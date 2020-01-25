@@ -23,6 +23,8 @@ export const POKEMON = gql`
       types
       resistant
       maxHP
+      maxCP
+      fleeRate
       weight {
         minimum
         maximum

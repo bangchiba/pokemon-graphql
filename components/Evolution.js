@@ -21,7 +21,7 @@ const Evolution = ({ data }) => {
 }
 
 Evolution.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.array.isRequired,
 }
 
 export default Evolution
