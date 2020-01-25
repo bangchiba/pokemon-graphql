@@ -2,12 +2,13 @@ import { gql } from 'apollo-boost'
 
 export const POKEMONS = gql`
   query($first: Int!) {
-    val : pokemons(first: $first) {
-        id
-        name
-        image
-        types
-        classification
+    val: pokemons(first: $first) {
+      id
+      number
+      name
+      image
+      types
+      classification
     }
   }
 `
@@ -20,6 +21,16 @@ export const POKEMON = gql`
       name
       image
       types
+      resistant
+      maxHP
+      weight {
+        minimum
+        maximum
+      }
+      height {
+        minimum
+        maximum
+      }
       evolutions {
         id
         name
